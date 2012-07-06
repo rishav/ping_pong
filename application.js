@@ -4,14 +4,20 @@ var Statuses = { started:true, stopped:false };
 var Game = { status:Statuses.stopped }
 
 $(document).ready(function() {
-	$('#start_game').click(function() {
+	$('#start_game').click(function(e) {
+		e.preventDefault();
 		Game.status = Statuses.started;
 	})
-	$('#stop_game').click(function() {
+	
+	$('#stop_game').click(function(e) {
+		e.preventDefault();
 		Game.status = Statuses.stopped;
 	})
+	
 	setInterval(moveBall,30);
 })
+
+
 $(document).keydown(function(e){
 	if (e.which == 38) {
 		var top = parseInt($("#paddleB").css("top")); 

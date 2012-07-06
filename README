@@ -1,0 +1,8 @@
+Simple open index.html in browser and test. 
+
+use "w,s,a,d" keys to move the left paddle
+and use 'up,down,right, left' keys to move the right paddle
+
+
+Test on Firefox 13.0.1 and Chrome vs 20.0.1132.47
+
