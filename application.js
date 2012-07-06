@@ -17,6 +17,14 @@ $(document).keydown(function(e){
 		var top = parseInt($("#paddleB").css("top")); 
 		$("#paddleB").css("top",top-5);
 	}
+	else if (e.which == 37) {
+		var left = parseInt($("#paddleB").css("left")); 
+		$("#paddleB").css("left",left-5);
+	}
+	else if (e.which == 39) {
+		var left = parseInt($("#paddleB").css("left")); 
+		$("#paddleB").css("left",left+5);
+	}
 	else if(e.which == 40) {
 		var top = parseInt($("#paddleB").css("top")); 
 		$("#paddleB").css("top",top+5);	
@@ -24,6 +32,14 @@ $(document).keydown(function(e){
 	else if(e.which == 87) {
 		var top = parseInt($("#paddleA").css("top"));
 		$("#paddleA").css("top",top-5);
+	}
+	else if(e.which == 65) {
+		var left = parseInt($("#paddleA").css("left"));
+		$("#paddleA").css("left",left-5);
+	}
+	else if(e.which == 68) {
+		var left = parseInt($("#paddleA").css("left"));
+		$("#paddleA").css("left",left+5);
 	}
 	else if(e.which == 83) {
 	 var top = parseInt($("#paddleA").css("top")); 
